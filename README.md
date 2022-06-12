@@ -2,7 +2,7 @@
 
 1. Download the csv you wish to cross check from event brite
 2. Download the json auth file from #intake-admin
-3 Place that file in a directory named `gspread` in your `/.config` file in your root directory 
+3. Place that file in a directory named `gspread` in your `/.config` file in your root directory 
 
 ```
 mkdir ~/.config/gspread && mv {Your_downloaded_json_file} ~/.config/gspread/service_account.json
