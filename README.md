@@ -9,7 +9,7 @@ mkdir ~/.config/gspread && mv {Your_downloaded_json_file} ~/.config/gspread/serv
 ```
 Naming with the above convention will avoid the need for any customizations
 
-4 (As long as you have python already installed on your computer) Run the script 
+4. (As long as you have python already installed on your computer) Run the script 
 `python3 udd_crosscheck.py {downloaded eventbrite csv path}`
 
 👏🏽 Viola
