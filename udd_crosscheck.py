@@ -11,9 +11,7 @@ def read_eventbrite_csv(filename):
     with open(filename) as eventbrite_csv:
         csv_dict = DictReader(eventbrite_csv)
         for parsed_object in csv_dict:
-            registrants.add(parsed_object['Email'])
-        
-
+            registrants.add(parsed_object['Email'].lower())
         
         registered_mentees = process_mentee_csv()
         registered_mentors = process_mentor_csv()

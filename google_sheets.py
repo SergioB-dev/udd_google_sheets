@@ -10,7 +10,7 @@ def process_mentee_csv():
     form_worksheet = mentee_csv.worksheet('Form Responses 1')
     mentee_data = form_worksheet.get_all_records()
     for mentee_datum in mentee_data:
-        registered_mentees.add(mentee_datum['Email?'])
+        registered_mentees.add(mentee_datum['Email?'].lower())
 
     return registered_mentees
 
@@ -22,7 +22,7 @@ def process_mentor_csv():
     form_worksheet = mentor_csv.worksheet('Form Responses 1')
     mentor_data = form_worksheet.get_all_records()
     for mentor_datum in mentor_data:
-        registered_mentors.add(mentor_datum['Email'])
+        registered_mentors.add(mentor_datum['Email'].lower())
 
     return registered_mentors
 
